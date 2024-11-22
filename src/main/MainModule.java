@@ -2,11 +2,14 @@ package main;
 
 import dao.ConcreteInsuranceService;
 import dao.IPolicyService;
+import entity.user;
+import entity.Payment;
+import entity.Claim;
+import entity.client;
 import entity.Policy;
 import exception.PolicyNotFoundException;
 import java.util.List;
 import java.util.Scanner;
-
 public class MainModule {
     public static void main(String[] args) {
         IPolicyService policyService = new ConcreteInsuranceService();
